@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Parallax Experience</title>
+    <link rel="stylesheet" href="/style.css"/>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+</head>
+<body>
+    <!-- Custom Cursors -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Bootstrap Navigation -->
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Parallax Pro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-shapes shape-1"></div>
+        <div class="floating-shapes shape-2"></div>
+        <div class="floating-shapes shape-3"></div>
+        <div class="floating-shapes shape-4"></div>
+    </div>
+
+    <!-- Interactive Zone -->
+    <div class="interactive-zone"></div>
+
+    <!-- Control Panel with Tailwind -->
+    <div class="control-panel d-none d-lg-block">
+        <div class="text-white mb-3">
+            <h6 class="mb-2">Controls</h6>
+            <div class="form-check form-switch mb-2">
+                <input class="form-check-input" type="checkbox" id="particlesToggle" checked>
+                <label class="form-check-label text-white-50" for="particlesToggle">
+                    Particles
+                </label>
+            </div>
+            <div class="form-check form-switch mb-2">
+                <input class="form-check-input" type="checkbox" id="parallaxToggle" checked>
+                <label class="form-check-label text-white-50" for="parallaxToggle">
+                    Parallax
+                </label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="animationsToggle" checked>
+                <label class="form-check-label text-white-50" for="animationsToggle">
+                    Animations
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Parallax Container -->
+    <div class="parallax-container" id="home">
+        <!-- Central Content -->
+        <div class="main-title">
+            <h1>PARALLAX</h1>
+            <p class="lead">Experience the magic of motion with Bootstrap & Tailwind</p>
+            <div class="mt-4">
+                <button class="btn btn-outline-light btn-lg me-3 px-4">Explore</button>
+                <button class="btn btn-light btn-lg px-4">Get Started</button>
+            </div>
+        </div>
+
+        <!-- Floating Icons with Parallax -->
+        <div class="parallax-element icon-1" data-speed="2">
+            <div class="floating-icon">🚀</div>
+        </div>
+        
+        <div class="parallax-element icon-2" data-speed="-3">
+            <div class="floating-icon">⭐</div>
+        </div>
+        
+        <div class="parallax-element icon-3" data-speed="4">
+            <div class="floating-icon">🌙</div>
+        </div>
+        
+        <div class="parallax-element icon-4" data-speed="-2">
+            <div class="floating-icon">🎯</div>
+        </div>
+        
+        <div class="parallax-element icon-5" data-speed="3">
+            <div class="floating-icon">💎</div>
+        </div>
+        
+        <div class="parallax-element icon-6" data-speed="-4">
+            <div class="floating-icon">🔥</div>
+        </div>
+    </div>
+
+    <!-- Features Section with Bootstrap Grid + Tailwind -->
+    <section id="features" class="py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100 p-4 text-center text-white">
+                        <div class="mb-3 fs-1">✨</div>
+                        <h5 class="mb-3">Smooth Animations</h5>
+                        <p class="text-white-50">Experience fluid animations powered by CSS3 and JavaScript</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100 p-4 text-center text-white">
+                        <div class="mb-3 fs-1">🎨</div>
+                        <h5 class="mb-3">Beautiful Design</h5>
+                        <p class="text-white-50">Modern glassmorphism design with gradient backgrounds</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100 p-4 text-center text-white">
+                        <div class="mb-3 fs-1">📱</div>
+                        <h5 class="mb-3">Responsive</h5>
+                        <p class="text-white-50">Perfectly optimized for all devices and screen sizes</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100 p-4 text-center text-white">
+                        <div class="mb-3 fs-1">⚡</div>
+                        <h5 class="mb-3">High Performance</h5>
+                        <p class="text-white-50">Optimized for smooth 60fps animations</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100 p-4 text-center text-white">
+                        <div class="mb-3 fs-1">🎯</div>
+                        <h5 class="mb-3">Interactive</h5>
+                        <p class="text-white-50">Rich interactive elements and cursor effects</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100 p-4 text-center text-white">
+                        <div class="mb-3 fs-1">🌟</div>
+                        <h5 class="mb-3">Modern</h5>
+                        <p class="text-white-50">Built with latest web technologies and frameworks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="/script.js"> </script>
+</body>
+</html>
